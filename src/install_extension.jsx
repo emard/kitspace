@@ -13,7 +13,11 @@ function installExtension() {
     }
   } else if (/Firefox/.test(version)) {
     onClick = () => {
-      window.open('https://addons.mozilla.org/en-US/firefox/addon/1clickbom')
+      window.open(
+        'https://addons.mozilla.org/firefox/downloads/' +
+          'latest/634060/addon-634060-latest.xpi',
+        '_self'
+      )
     }
   } else {
     onClick = () => {
